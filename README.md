@@ -2,7 +2,7 @@
 
 Pasos para correr el proyecto:
 
-1) Luego de clonar, para correr el front debera tener instalago angular cli. En caso de no tenerlo instalado, debe correr en la linea de comandos el siguiente comando:
+1) Luego de clonar, para correr el front debera tener instalado angular cli. En caso de no tenerlo, debe correr en la linea de comandos lo siguiente:
 
   npm install -g @angular/cli
 
@@ -10,7 +10,7 @@ Pasos para correr el proyecto:
   npm install
   
 3) Una vez que termine de instalar los paquetes ingresar:
-  ng-serve
+  ng serve
       
 4) Para correr el backend primero hay que correr las migraciones.
 
