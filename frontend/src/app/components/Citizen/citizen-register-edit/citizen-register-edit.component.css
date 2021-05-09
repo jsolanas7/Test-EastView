@@ -1,0 +1,45 @@
+.principalContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+label{
+    margin-top: 20px;
+    font-size: 20px;
+}
+input{
+    width: 25vw;
+    font-size: 20px;    
+}
+
+.btnContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnContainer button{
+    margin: 25px;
+    width: 10vw;
+    font-size: 20px;
+}
+
+#divSearch{
+    display:flex;
+    flex-direction: row;
+}
+
+.table  th{
+    font-size: 15px;
+}
+
+.tableTasks td {
+    font-size: 15px;
+}

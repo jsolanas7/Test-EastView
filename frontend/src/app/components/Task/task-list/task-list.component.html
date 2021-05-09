@@ -1,0 +1,25 @@
+<div class="principalContainer">
+    <div class="tableContainer">
+        <h1>Lista de tareas</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th><a routerLink="/task-register-edit/"><i class="glyphicon glyphicon-plus-sign text-success"></i></a></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let task of tasks">
+                    <td>{{task.id}}</td>
+                    <td>{{task.name}}</td>
+                    <td>{{task.description}}</td>
+                    <td><a href="javascript:void(0)" (click)="onOpen(task.id)"><i class="glyphicon glyphicon-edit text-primary"></i></a>   </td>
+                    <td><a href="javascript:void(0)" (click)="onDelete(task.id)"><i class="glyphicon glyphicon-remove text-danger"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

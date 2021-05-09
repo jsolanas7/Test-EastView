@@ -1,0 +1,27 @@
+.principalContainer{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+.tableContainer{
+    margin-top: 10px;
+    box-shadow: 1px 0px 5px 0px rgb(0 0 0 / 28%);
+    padding: 40px;
+    width: 80%;
+}
+h1{
+    font-size: 30;
+    margin-bottom: 15px;
+}
+tr{
+    font-size: 20px;
+}
+
+
+.listTask tr{
+    font-size:15px!important;
+}
+
+[hidden] {
+    display: none !important;
+  }

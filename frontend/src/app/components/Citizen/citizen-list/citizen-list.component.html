@@ -1,0 +1,27 @@
+<div class="principalContainer">
+    <div class="tableContainer">
+        <h1>Lista de ciudadanos</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>DNI</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th><a routerLink="/citizen-register-edit/"><i class="glyphicon glyphicon-plus-sign text-success"></i></a></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let citizen of citizens">
+                    <td>{{citizen.id}}</td>
+                    <td>{{citizen.dni}}</td>
+                    <td>{{citizen.firstName}}</td>
+                    <td>{{citizen.surName}}</td>
+                    <td><a href="javascript:void(0)" (click)="onOpen(citizen.id)"><i class="glyphicon glyphicon-edit text-primary"></i></a>   </td>
+                    <td><a href="javascript:void(0)" (click)="onDelete(citizen.id)"><i class="glyphicon glyphicon-remove text-danger"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="principalContainer">
+    <h1>{{title}}</h1>
+    <form [formGroup]="citizenForm" (ngSubmit)="onSubmit()">
+        <label>Nombre</label>
+        <input formControlName="firstName" class="form-control input-lg">
+        <label>Apellido</label>
+        <input formControlName="surName" class="form-control input-lg">
+        <label>DNI</label>
+        <input formControlName="dni" class="form-control input-lg">
+        <label>Asignar tareas</label>
+        <div id="divSearch">
+            <input id="search" formControlName="search" class="form-control input-lg" placeholder="Nombre de la tarea">
+            <button type="button" class="btn btn-primary" (click)="onSearch()"  style="margin-left: 7px;">Buscar</button>
+        </div>
+        <ng-container *ngIf="tasksGetted.length > 0">
+            <table class="table tableTasks">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Descripcion</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let task of tasksGetted">
+                        <td>{{task.id}}</td>
+                        <td>{{task.name}}</td>
+                        <td>{{task.description}}</td>
+                        <td>{{task.date}}</td>
+                        <td><a href="javascript:void(0)" (click)="onAdd(task.id)"><i
+                                    class="glyphicon glyphicon-plus-sign text-success"></i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </ng-container>
+        <label>Tareas asignadas</label>
+        <table class="table tableTasks">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Fecha</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let task of citizenDto?.tasks">
+                    <td>{{task.id}}</td>
+                    <td>{{task.name}}</td>
+                    <td>{{task.description}}</td>
+                    <td>{{task.date}}</td>
+                    <td><a href="javascript:void(0)" (click)="onDelete(task.id)"><i class="glyphicon glyphicon-remove text-danger"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="btnContainer">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+    </form>
+</div>

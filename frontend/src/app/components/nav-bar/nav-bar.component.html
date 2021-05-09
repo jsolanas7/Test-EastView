@@ -1,0 +1,9 @@
+<nav class="navBarContainer navbar-inverse">
+    <ul>
+        <li><a routerLink="/citizen-list">Ciudadanos</a></li>
+        <li><a routerLink="/task-list">Tareas</a></li>
+        <li *ngIf="isWitch"><a routerLink="/witch-view">Vista bruja</a></li>
+        <li><a (click)="onClose()">Cerrar sesión</a></li>
+        <!-- <li><a routerLink="/cubo-task-list">Cubo conexion por empresa</a></li> -->
+    </ul>
+</nav>

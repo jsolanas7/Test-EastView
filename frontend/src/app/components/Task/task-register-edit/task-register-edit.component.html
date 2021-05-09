@@ -1,0 +1,19 @@
+<div class="principalContainer">
+    <h1>{{title}}</h1>
+    <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+        <label>Nombre</label>
+        <input formControlName="name" class="form-control input-lg">
+        <label>Día</label>
+        <select class="form-control input-lg" style="font-size: 20px;"  formControlName="date" (change)="change($event)" >
+            <option *ngFor="let day of days" 
+            [selected]="day == 'Lunes'" >{{day}}
+        </option>
+        </select>
+       
+        <label>Descripción</label>
+        <textarea formControlName="description" style="font-size: 20px;" class="form-control input-lg"></textarea>
+        <div class="btnContainer">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+    </form>
+</div>

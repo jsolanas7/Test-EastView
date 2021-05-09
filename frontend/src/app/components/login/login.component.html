@@ -1,0 +1,22 @@
+<div class="loginPageContainer">
+    <div class="loginContainer">
+        <div>
+            <img class="logo" src="../../../assets/imgs/witch.png"/>
+        </div>
+        <div class="insideLoginContainer">
+            <div>
+                <h1>Login</h1>
+            </div>
+            <div>
+                <input [(ngModel)]="userLogin" type="text" class="form-control"/>
+            </div>
+            <div>
+                <input [(ngModel)]="password"  type="password" class="form-control"/>
+            </div>
+            <div>
+                <button class="btn" (click)="onLogin()">Login</button>
+            </div>
+        </div>
+      
+    </div>
+  </div>

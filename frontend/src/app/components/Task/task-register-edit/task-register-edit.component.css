@@ -1,0 +1,31 @@
+.principalContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+label{
+    font-size: 20px;
+}
+input{
+    width: 20vw;
+    font-size: 20px;    
+}
+
+.btnContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnContainer button{
+    margin: 25px;
+    width: 10vw;
+    font-size: 20px;
+}
