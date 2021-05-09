@@ -7,7 +7,9 @@ Pasos para correr el proyecto:
   npm install -g @angular/cli
 
 2) Para correr el frontend debera ingresar dentro del proyecto el siguiente comando:
-
-  ng-serve
+  npm install
   
-3) Para correr el backend primero hay que correr las migraciones.
+3) Una vez que termine de instalar los paquetes ingresar:
+  ng-serve
+      
+4) Para correr el backend primero hay que correr las migraciones.
