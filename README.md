@@ -13,3 +13,5 @@ Pasos para correr el proyecto:
   ng-serve
       
 4) Para correr el backend primero hay que correr las migraciones.
+
+5) El proyecto debe correr en el puerto 44392 con https
